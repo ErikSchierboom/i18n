@@ -142,15 +142,22 @@ Install it in the root of your project via `jspm install npm:i18next-xhr-backend
 
     1. **i18next**
 
-        - If You use [typings](https://github.com/typings/typings) (it is most likely true) you can istall typings for [i18next](http://i18next.com/) with next command in console:
+        - If You use [typings](https://github.com/typings/typings) (it is most likely true), you can install the typings for [i18next](http://i18next.com/) using this command:
+        
             ```
             typings install dt~i18next --global
             ```
-        - alternatively you can use a similar file from this repositories doc folder (`doc/i18next.d.ts`)
+        - Alternatively, you can use a similar file from this repositories doc folder: `doc/i18next.d.ts`
 
     2. **i18next-xhr-backend**
-        - use the typings file from this repositories doc folder `doc/i18next-xhr-backend.d.ts`
-    > in order to comply with some neat project structure you should copy `*.d.ts` files from `doc/*.d.ts` to another folder, e.g. `/customTypings`
+        - If You use [typings](https://github.com/typings/typings) (it is most likely true), you can install the typings for [i18next-xhr-backend](https://github.com/i18next/i18next-xhr-backend) using this command:
+            ```
+            typings install dt~i18next-xhr-backend --global
+            ``` 
+            
+        - Alternative, you can  use the typings file from this repository's doc folder: `doc/i18next-xhr-backend.d.ts`
+        
+    Note: if you decide to use the `doc/*.d.ts` files, you should copy them to another folder, e.g. `custom_typings`.
 
     The next step is to let the compiler know about your `*.d.ts` files. Add the following section to your `tsconfig.json` file.
     ```javascript
